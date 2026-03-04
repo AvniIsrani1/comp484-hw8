@@ -9,19 +9,35 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <link href="css/styles.css" rel="stylesheet" type="text/css" /> <!-- link to css styling page -->
-    <title>Avni Israni | Resume</title> <!-- title to appear at top of browser -->
+    <!-- link to css styling page -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <!-- link to fontawesome icons -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v7.2.0/js/all.js"
+    ></script>
+    <!-- title to appear at top of browser -->
+    <title>Avni Israni | Resume</title>
   </head>
   <body>
     <!-- // Intro -->
     <header>
+      <!-- Navigation -->
+      <nav class="navigation">
+        <a href="#About">About</a>
+        <a href="#Experience">Work Experience</a>
+        <a href="#Education">Education</a>
+        <a href="#Contact">Contact</a>
+        <a href="/static/Avni_Israni_Resume.pdf" download>Download PDF</a>
+      </nav>
+
       <div class="content-wrap">
         <img
           src="images/avni.jpg"
           alt="Avni Israni"
           class="profile-img column-narrow"
         />
-        <div class="column-wide">
+        <div class="column-wide" id="About">
           <h1>Avni Israni</h1>
           <h2>
             CS @ Cal. State Northridge | ML Engineer | Data Scientist |
@@ -37,66 +53,72 @@
 
     <main>
       <!-- // Work Experience -->
-      <section class="work-experience">
+      <section class="work-experience" id="Experience">
         <div class="content-wrap">
           <h2>Work Experience</h2>
 
           <!-- Job Details: copy this whole block to add more jobs -->
-          <div class="column-narrow">
-            <h3>Application Development Intern</h3> <!-- h3 since this is a subcategory within this section -->
-            <p>Centene Corporation</p>
-            <p>May 2025 - December 2025</p>
-          </div>
-          <div class="column-wide">
-            <!-- Add as many paragraphs as you need. -->
-            <p>
-              Full-stack web development with Angular, Spring Boot, and AWS
-              (Python, Typescript, Java).
-            </p>
+          <div class="details">
+            <div class="column-narrow">
+              <h3>Application Development Intern</h3>
+              <!-- h3 since this is a subcategory within this section -->
+              <p>Centene Corporation</p>
+              <p>May 2025 - December 2025</p>
+            </div>
+            <div class="column-wide">
+              <!-- Add as many paragraphs as you need. -->
+              <p>
+                Full-stack web development with Angular, Spring Boot, and AWS
+                (Python, Typescript, Java).
+              </p>
 
-            <!-- This list can be deleted if you don't want to use it. -->
-            <p>Responsibilities:</p>
-            <ul>
-              <li>
-                Created OAuth-2.0-based API to centralize access control across
-                10 internal microservices.
-              </li>
-              <li>Developed large-file API for 50+ GB uploads.</li>
-              <li>Automated deployment using Kubernetes.</li>
-            </ul>
+              <!-- This list can be deleted if you don't want to use it. -->
+              <p>Responsibilities:</p>
+              <ul>
+                <li>
+                  Created OAuth-2.0-based API to centralize access control
+                  across 10 internal microservices.
+                </li>
+                <li>Developed large-file API for 50+ GB uploads.</li>
+                <li>Automated deployment using Kubernetes.</li>
+              </ul>
+            </div>
           </div>
+
           <!-- end of Job Details block. -->
 
           <!-- Job Details: copy this whole block to add more jobs -->
-          <div class="column-narrow">
-            <h3>Data Analyst Intern</h3>
-            <p>Centene Corporation</p>
-            <p>May 2024 - August 2024</p>
-          </div>
+          <div class="details">
+            <div class="column-narrow">
+              <h3>Data Analyst Intern</h3>
+              <p>Centene Corporation</p>
+              <p>May 2024 - August 2024</p>
+            </div>
 
-          <div class="column-wide">
-            <!-- Add as many paragraphs as you need. -->
-            <p>
-              Data insights and visualization using Python, SQL, and Power BI.
-            </p>
+            <div class="column-wide">
+              <!-- Add as many paragraphs as you need. -->
+              <p>
+                Data insights and visualization using Python, SQL, and Power BI.
+              </p>
 
-            <!-- This list can be deleted if you don't want to use it. -->
-            <p>Responsibilities:</p>
-            <!-- unordered list since responsibilities can be read in any order -->
-            <ul> 
-              <li>
-                Data analysis to uncover retention impact of a third-party
-                vendor.
-              </li>
-              <li>Presented key findings to stakeholders and management.</li>
-            </ul>
+              <!-- This list can be deleted if you don't want to use it. -->
+              <p>Responsibilities:</p>
+              <!-- unordered list since responsibilities can be read in any order -->
+              <ul>
+                <li>
+                  Data analysis to uncover retention impact of a third-party
+                  vendor.
+                </li>
+                <li>Presented key findings to stakeholders and management.</li>
+              </ul>
+            </div>
           </div>
           <!-- end of Job Details block. -->
         </div>
       </section>
 
       <!-- // Education -->
-      <section class="education">
+      <section class="education" id="Education">
         <div class="content-wrap">
           <h2>Education</h2>
 
@@ -120,11 +142,17 @@
       <div class="content-wrap">
         <h2>Let's Keep in Touch!</h2>
         <!-- Social media and contact links. Add or remove any networks. -->
-        <div class="contact-info">
-          <a href="mailto:avniisrani9@gmail.com">avniisrani9@gmail.com</a>
-          <a href="https://github.com/AvniIsrani1" target="_blank">GitHub</a>
-          <a href="https://linkedin.com/in/avni-israni-310096277" target="_blank"
-            >LinkedIn</a
+        <div class="contact-info" id="Contact">
+          <a href="mailto:avniisrani9@gmail.com"
+            ><i class="fa-solid fa-at"></i>avniisrani9@gmail.com</a
+          >
+          <a href="https://github.com/AvniIsrani1" target="_blank"
+            ><i class="fa-brands fa-github"></i>GitHub</a
+          >
+          <a
+            href="https://linkedin.com/in/avni-israni-310096277"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
           >
         </div>
 

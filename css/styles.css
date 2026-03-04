@@ -43,6 +43,10 @@ body {
     min-height: 225px;
 }
 
+.column-wide > p:first-child {
+  margin-top: 0;
+}
+
 /* Headings
 ------------------------------------*/
 h1,
@@ -64,6 +68,7 @@ h2 {
 }
 h3 {
   font-size: 28px;
+  margin-top: 0;
 }
 h4 {
   font-size: 24px;
@@ -73,6 +78,25 @@ h5 {
 }
 h6 {
   font-size: 16px;
+}
+
+/* Navigation
+------------------------------------*/
+.navigation {
+  text-align: center;
+  background-color: #efe1d1;
+  position: fixed;
+  width: 100%;
+}
+.navigation a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 900;
+  color:#331d2c;
+}
+.navigation a:hover {
+  background-color: #decec0;
 }
 
 /* Header & Footer 
@@ -85,9 +109,17 @@ footer {
 
 /* Header -------- */
 
+header {
+  position: relative;
+}
+
 header h1,
 header h2 {
   margin: 0;
+}
+
+header .content-wrap {
+  padding-top:100px;
 }
 
 .profile-img {
@@ -103,6 +135,10 @@ footer a {
   text-align: center;
 }
 
+footer .content-wrap {
+  text-align: center;
+}
+
 .contact-info a {
   padding: 10px;
   display: inline-block;
@@ -112,11 +148,15 @@ footer a {
 /* Work Experience
 ------------------------------------*/
 .work-experience {
-  background: #a78295;
+  background: #A78295;
 }
 
 /* Education
 ------------------------------------*/
 .education {
-  background: #977b95;
+  background-image: linear-gradient(rgba(239, 225, 209, 0.7), rgba(239, 225, 209, 0.7)), url("/images/csun.jpg"); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; /* center so that image is aligned and not cutting off main part */
+  background-size: cover;
 }
