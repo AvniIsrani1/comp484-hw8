@@ -154,7 +154,7 @@ footer .content-wrap {
 /* Education
 ------------------------------------*/
 .education {
-  background-image: linear-gradient(rgba(239, 225, 209, 0.7), rgba(239, 225, 209, 0.7)), url("/images/csun.jpg"); 
+  background-image: linear-gradient(rgba(239, 225, 209, 0.7), rgba(239, 225, 209, 0.7)), url("../images/csun.jpg"); 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; /* center so that image is aligned and not cutting off main part */
